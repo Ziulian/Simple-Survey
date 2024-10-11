@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<link href="survey.css" rel="stylesheet">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milka Survey</title>
+  </head>
+  <body>
+    <h1>
+       Milka Chocolate Survey Form
+    </h1>
+    <p>
+       Thank you for taking the time to help us improve the platform
+    </p>
+    <div class="menu">
+      <main>
+        <form id="survey-form" >
+          <label id="name-label">Name
+            <input required id="name" type="text" placeholder="Enter your name" />
+          </label>
+          <label id="email-label">Email
+            <input required id="email" type="email" placeholder="Enter your Email"/>
+          </label>
+          <label id="number-label">Age(optional)
+            <input id="number" type="number" min="10" max="99" placeholder="Age" />
+          </label>
+          <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>Would you recommend the Milka chocolate to a friend?
+          <label><input value="Definitely" type="radio" name="reccomend" class="inline">Definitely</label><br>
+          <label><input value="Maybe" type="radio" name="reccomend" class="inline">Maybe</label><br>
+          <label><input value="Not sure" type="radio" name="reccomend" class="inline">Not sure</label><br>
+        <br>
+        <br>
+          <label class="favorite">What is your favorite flavour of Milka chocolate?
+            <select id="dropdown">
+              <option>Select an option</option>
+              <option>Milk</option>
+              <option>Raspberries</option>
+              <option>Dark Chocolate</option>
+            </select>
+          </label>
+
+
+          <label>What new flavour would you like to taste? (Check all that apply)
+          </label><br>
+          <label>
+            <input type="checkbox" value="Bubblegum" class="inline">Bubblegum</label><br>
+            <label>
+            <input type="checkbox" value="Mint" class="inline">Mint</label><br>
+            <label>
+            <input type="checkbox" value="Coffee" class="inline">Coffee</label><br>
+            <label>
+            <input type="checkbox" value="Marzipan" class="inline">Marzipan</label><br>
+
+            <br>
+            <br>
+
+            <label for="suggestions">Any comments or suggestions?
+              <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </label>
+
+        <button id="submit" type="submit">Submit</button>
+      </main>
+    </div>
+  </body>
+</html>
